@@ -1,0 +1,17 @@
+{
+	"header": {
+		"msgId": " SG70123987456",
+		"orgId": "0123",
+		"timeStamp": "2017-01-26T16:16:43.567",
+		"ctry": "CN"
+	},
+	"txnResponses": [
+	{
+		"responseType": "ACK1",
+		"msgRefId": "12345678",
+		"txnStatus": "RJCT",
+		"txnRejectCode": "I100",
+		"txnStatusDescription": " Country is incorrect"
+	}
+	]
+}

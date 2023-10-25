@@ -1,0 +1,2638 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:Q1="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/service" xmlns:bic="http://www.seeburger.com/bicng/lang/schema/" xmlns:edifact="http://www.seeburger.com/bicng/lang/schema/edifact" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/service">
+  <xsd:import namespace="http://www.seeburger.com/bicng/lang/schema/edifact" schemaLocation="platform:/plugin/com.seeburger.bicng.lang.schema.facade.edifact/resources/edifact.xsd"/>
+  <xsd:simpleType name="_0022">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Recipient's reference/password" xml:lang="en">Unique reference assigned by the recipient to the data interchange or a password to the recipient's system or to a third party network as specified in the partners interchange agreement.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="14"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0025">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Recipient's reference/password qualifier" xml:lang="en">Qualifier for the recipient's reference or password.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN">
+      <xsd:length value="2"/>
+      <xsd:enumeration value="AA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reference" xml:lang="en">Recipient's reference/password is a reference.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BB">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Password" xml:lang="en">Recipient's reference/password is a password.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0026">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Application reference" xml:lang="en">Identification of the application area assigned by the sender, to which the messages in the interchange relate e.g. the message identifier if all the messages in the interchange are of the same type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="14"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0051">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Controlling agency" xml:lang="en">Code to identify the agency controlling the specification, maintenance and publication of the message type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="2"/>
+      <xsd:enumeration value="AA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="EDICONSTRUCT" xml:lang="en">French construction project.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AB">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="DIN (Deutsches Institut fuer Normung)" xml:lang="en">German standardization institute.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="ICS (International Chamber of Shipping)" xml:lang="en">The International Chamber of Shipping.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UPU (Union Postale Universelle)" xml:lang="en">Universal Postal Union.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="United Kingdom ANA (Article Numbering Association)" xml:lang="en">Identifies the Article Numbering Association of the United Kingdom.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="ANSI ASC X12 (American National Standard Institute Accredited Standards Committee X12)" xml:lang="en">Identifies the United States electronic data interchange standards body.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AG">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="US DoD (United States Department of Defense)" xml:lang="en">The United States Department of Defense is the entity controlling the message specification.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AH">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="US Federal Government" xml:lang="en">The United States Federal Government is the entity controlling the message specification.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AI">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="EDIFICAS" xml:lang="en">European EDI association for financial, informational, cost, accounting, auditing and social areas.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="CCC (Customs Co-operation Council)" xml:lang="en">The Customs Co-operation Council.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="CEFIC (Conseil Europeen des Federations de l'Industrie Chimique)" xml:lang="en">EDI project for chemical industry.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="EC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="EDICON" xml:lang="en">UK Construction project.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ED">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="EDIFICE (Electronic industries project)" xml:lang="en">EDI Forum for companies with Interest in Computing and Electronics (EDI project for EDP/ADP sector).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="EE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="EC + EFTA (European Communities and European Free Trade Association)" xml:lang="en">The European Communities and the European Free Trade Association.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="EN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="GS1" xml:lang="en">Partner identification code assigned by GS1, an international organization of GS1 Member Organizations that manages the GS1 System.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ER">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UIC (International Union of railways)" xml:lang="en">European railways.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="EU">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="European Union" xml:lang="en">The European Union.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="EW">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UN/EDIFACT Working Group (EWG)" xml:lang="en">United Nations working group responsible for UN/EDIFACT (United Nations, Electronic Data Interchange for Administration, Commerce and Transport).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="EX">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="IECC (International Express Carriers Conference)" xml:lang="en">The International Express Carriers Conference.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="IATA (International Air Transport Association)" xml:lang="en">The International Air Transport Association.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="KE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="KEC (Korea EDIFACT Committee)" xml:lang="en">The Korea EDIFACT Committee.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="LI">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="LIMNET" xml:lang="en">UK Insurance project.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="ODETTE (Organization for Data Exchange through Tele- Transmission in Europe)" xml:lang="en">European automotive industry project.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RI">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="RINET (Reinsurance and Insurance Network)" xml:lang="en">The Reinsurance and Insurance Network.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UN/ECE/TRADE/WP.4/GE.1/EDIFACT Rapporteurs' Teams" xml:lang="en">United Nations Economic UN Economic Commission for Europe (UN/ECE), Committee on the development of trade (TRADE), Working Party on facilitation of international trade procedures (WP.4), Group of Experts on data elements and automatic data interchange (GE.1), EDIFACT Rapporteurs' Teams.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UN/CEFACT" xml:lang="en">United Nations Centre for Trade Facilitation and Electronic Business (UN/CEFACT).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0052">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Message version number" xml:lang="en">Version number of a message type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="3"/>
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Status 1 version" xml:lang="en">Message approved and issued as a status 1 (trial) message. (Valid for directories published after March 1990 and prior to March 1993).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Status 2 version" xml:lang="en">Message approved and issued as a status 2 (formal recommendation) message. (Valid for directories published after March 1990 and prior to March 1993).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="88">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="1988 version" xml:lang="en">Message approved and issued in the 1988 release of the UNTDID (United Nations Trade Data Interchange Directory) as a status 2 (formal recommendation) message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="89">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="1989 version" xml:lang="en">Message approved and issued in the 1989 release of the UNTDID (United Nations Trade Data Interchange Directory) as a status 2 (formal recommendation) message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="90">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="1990 version" xml:lang="en">Message approved and issued in the 1990 release of the UNTDID (United Nations Trade Data Interchange Directory) as a status 2 (formal recommendation) message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="D">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Draft version/UN/EDIFACT Directory" xml:lang="en">Message approved and issued as a draft message (Valid for directories published after March 1993 and prior to March 1997). Message approved as a standard message (Valid for directories published after March 1997).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="S">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Standard version" xml:lang="en">Message approved and issued as a standard message. (Valid for directories published after March 1993 and prior to March 1997).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0029">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Processing priority code" xml:lang="en">Code determined by the sender requesting processing priority for the interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:A">
+      <xsd:length value="1"/>
+      <xsd:enumeration value="A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Highest priority" xml:lang="en">Requested processing priority is the highest.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0054">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Message release number" xml:lang="en">Release number within the current message type version number (0052).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="3"/>
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="First release" xml:lang="en">Message approved and issued in the first release of the year of the UNTDID (United Nations Trade Data Interchange Directory). (Valid for directories published prior to March 1990)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Second release" xml:lang="en">Message approved and issued in the second release of the year of the UNTDID (United Nations Trade Data Interchange Directory) (Valid for directories published prior to March 1990).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="3">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Third release, CONTRL message" xml:lang="en">Third release of the service message type CONTRL. Approved and issued as document TRADE/WP.4/R.1186/Rev.1 (including Corr.1) for use with version 2 and 3 of the syntax.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="902">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Trial release 1990" xml:lang="en">Message approved and issued in the 1990 status 1 (trial) release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="911">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Trial release 1991" xml:lang="en">Message approved and issued in the 1991 status 1 (trial) release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="912">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Standard release 1991" xml:lang="en">Message approved and issued in the 1991 status 2 (standard) release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="921">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Trial release 1992" xml:lang="en">Message approved and issued in the 1992 status 1 (trial) release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="932">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Standard release 1993" xml:lang="en">Message approved and issued in the 1993 status 2 (standard) release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="00A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2000 - A" xml:lang="en">Message approved and issued in the first 2000 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="00B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2000 - B" xml:lang="en">Message approved and issued in the second 2000 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="01A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2001 - A" xml:lang="en">Message approved and issued in the first 2001 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="01B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2001 - B" xml:lang="en">Message approved and issued in the second 2001 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="01C">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2001 - C" xml:lang="en">Message approved and issued in the third 2001 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="02A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2002 - A" xml:lang="en">Message approved and issued in the first 2002 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="02B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2002 - B" xml:lang="en">Message approved and issued in the second 2002 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="03A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2003 - A" xml:lang="en">Message approved and issued in the first 2003 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="03B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2003 - B" xml:lang="en">Message approved and issued in the second 2003 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="04A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2004 - A" xml:lang="en">Message approved and issued in the first 2004 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="04B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2004 - B" xml:lang="en">Message approved and issued in the second 2004 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="05A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2005 - A" xml:lang="en">Message approved and issued in the first 2005 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="05B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2005 - B" xml:lang="en">Message approved and issued in the second 2005 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="06A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2006 - A" xml:lang="en">Message approved and issued in the first 2006 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="06B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2006 - B" xml:lang="en">Message approved and issued in the second 2006 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="07A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2007 - A" xml:lang="en">Message approved and issued in the first 2007 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="07B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2007 - B" xml:lang="en">Message approved and issued in the second 2007 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="08A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2008 - A" xml:lang="en">Message approved and issued in the first 2008 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="08B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2008 - B" xml:lang="en">Message approved and issued in the second 2008 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="09A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2009 - A" xml:lang="en">Message approved and issued in the first 2009 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="09B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2009 - B" xml:lang="en">Message approved and issued in the second 2009 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="10A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2010 - A" xml:lang="en">Message approved and issued in the first 2010 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="10B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2010 - B" xml:lang="en">Message approved and issued in the second 2010 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="11A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 2011 - A" xml:lang="en">Message approved and issued in the first 2011 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="93A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1993 - A" xml:lang="en">Message approved and issued in the 1993 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="94A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1994 - A" xml:lang="en">Message approved and issued in the first 1994 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="94B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1994 - B" xml:lang="en">Message approved and issued in the second 1994 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="95A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1995 - A" xml:lang="en">Message approved and issued in the first 1995 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="95B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1995 - B" xml:lang="en">Message approved and issued in the second 1995 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="96A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1996 - A" xml:lang="en">Message approved and issued in the first 1996 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="96B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1996 - B" xml:lang="en">Message approved and issued in the second 1996 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="97A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1997 - A" xml:lang="en">Message approved and issued in the first 1997 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="97B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1997 - B" xml:lang="en">Message approved and issued in the second 1997 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="98A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1998 - A" xml:lang="en">Message approved and issued in the first 1998 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="98B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1998 - B" xml:lang="en">Message approved and issued in the second 1998 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="99A">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1999 - A" xml:lang="en">Message approved and issued in the first 1999 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="99B">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Release 1999 - B" xml:lang="en">Message approved and issued in the second 1999 release of the UNTDID (United Nations Trade Data Interchange Directory).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0057">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Association assigned code" xml:lang="en">A code assigned by the association responsible for the design and maintenance of the message type concerned, which further identifies the message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="6"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0081">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Section identification" xml:lang="en">Separates sections in a message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:A">
+      <xsd:length value="1"/>
+      <xsd:enumeration value="D">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Header/detail section separation" xml:lang="en">To qualify the segment UNS, when separating the header from the detail section of a message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="S">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Detail/summary section separation" xml:lang="en">To qualify the segment UNS, when separating the detail from the summary section of a message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0058">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Application password" xml:lang="en">Password to the recipient's division, department or sectional system (if required).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="14"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0083">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Action, coded" xml:lang="en">A code indicating acknowledgement, or rejection (the action taken) of a subject interchange, or part of the subject interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="3"/>
+      <xsd:enumeration value="4">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="This level and all lower levels rejected" xml:lang="en">The corresponding referenced-level and all its lower referenced-levels are rejected. One or more errors are reported at this reporting-level or a lower reporting- level.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="7">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="This level acknowledged, next lower level acknowledged if not explicitly rejected" xml:lang="en">The corresponding referenced-level is acknowledged. All messages or functional groups at the next lower referenced-level are acknowledged except those explicitly reported as rejected at the next lower reporting-level in this CONTRL message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="8">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Interchange received" xml:lang="en">Indication of interchange receipt implies that the recipient of the subject interchange: has received the interchange; and acknowledges the parts of the interchange that have been checked in order to assure that the data elements copied into the reporting UCI segment are syntactically correct; and has accepted liability for notifying the sender of acknowledgement or rejection of the other parts of the interchange; and has taken reasonable precautions in order to ensure that the sender is so notified.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0085">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Syntax error, coded" xml:lang="en">A code indicating the syntax error detected.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="3"/>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Syntax version or level not supported" xml:lang="en">Notification that the syntax version and/or level is not supported by the recipient.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="7">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Interchange recipient not actual recipient" xml:lang="en">Notification that the Interchange recipient (S003) is different from the actual recipient.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="12">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Invalid value" xml:lang="en">Notification that the value of a simple data element, composite data element or component data element does not conform to the relevant specifications for the value.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="13">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Missing" xml:lang="en">Notification that a mandatory (or otherwise required) service or user segment, data element, composite data element or component data element is missing</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="14">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Value not supported in this position" xml:lang="en">Notification that the recipient does not support use of the specific value of an identified simple data element, composite data element or component data element in the position where it is used. The value may be valid according to the relevant specifications and may be supported if it is used in another position.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="15">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Not supported in this position" xml:lang="en">Notification that the recipient does not support use of the segment type, simple data element type, composite data element type or component data element type in the specific in the identified position.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="16">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Too many constituents" xml:lang="en">Notification that the identified segment contained too many data elements or that the identified composite data element contained too many component data elements.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="17">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="No agreement" xml:lang="en">No agreement exist that allows receipt of an interchange, functional group or message with the value of the identified simple data element, composite data element or component data element.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="18">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Unspecified error" xml:lang="en">Notification that an error has been identified, but the nature of the error is not reported.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="19">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Invalid decimal notation" xml:lang="en">Notification that the character indicated as decimal notation in UNA is invalid, or the decimal notation used in a data element is not consistent with the one indicated in UNA.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="20">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Character invalid as service character" xml:lang="en">Notification that a character advised in UNA is invalid as service character.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="21">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Invalid character(s)" xml:lang="en">Notification that one or more character(s) used in the interchange is not a valid character as defined by the syntax level indicated in UNB. The invalid character is part of the referenced-level, or followed immediately after the identified part of the interchange.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="22">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Invalid service character(s)" xml:lang="en">Notification that the service character(s) used in the interchange is not a valid service character as advised in UNA or not one of the service characters in the syntax level indicated in UNB or defined in an interchange agreement. If the code is used in UCS or UCD, the invalid character followed immediately after the identified part of the interchange.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="23">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Unknown Interchange sender" xml:lang="en">Notification that the Interchange sender (S002) is unknown.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="24">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Too old" xml:lang="en">Notification that the received interchange or functional group is older than a limit specified in an IA or determined by the recipient.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="25">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Test indicator not supported" xml:lang="en">Notification that a test processing could not be performed for the identified interchange, functional group or message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="26">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Duplicate detected" xml:lang="en">Notification that a possible duplication of a previously received interchange, functional group or message has been detected. The earlier transmission may have been rejected.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="27">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Security function not supported" xml:lang="en">Notification that a security function related to the referenced-level or data element is not supported.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="28">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="References do not match" xml:lang="en">Notification that the control reference in UNB/UNG/UNH does not match the one in UNZ/UNE/UNT.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="29">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Control count does not match number of instances received" xml:lang="en">Notification that the number of functional groups/ messages/segments does not match the number given in UNZ/UNE/UNT.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="30">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Functional groups and messages mixed" xml:lang="en">Notification that individual messages and functional groups have been mixed at the same level in the interchange.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="31">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="More than one message type in group" xml:lang="en">Notification that different message types are contained in a functional group.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="32">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Lower level empty" xml:lang="en">Notification that the interchange did not contain any messages or functional groups, or a functional group did not contain any messages.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="33">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Invalid occurrence outside message or functional group" xml:lang="en">Notification that an invalid segment or data element occurred in the interchange, between messages or between functional groups. Rejection is reported at the level above.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="34">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Nesting indicator not allowed" xml:lang="en">Notification that explicit nesting has been used in a message where it shall not be used.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="35">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Too many segment repetitions" xml:lang="en">Notification that a segment was repeated too many times.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="36">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Too many segment group repetitions" xml:lang="en">Notification that a segment group is repeated to many times.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="37">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Invalid type of character(s)" xml:lang="en">Notification that one or more numeric characters were used in an alphabetic (component) data element or that one or more alphabetic characters were used in a numeric (component) data element.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="38">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Missing digit in front of decimal sign" xml:lang="en">Notification that a decimal sign is not preceded by one or more digits.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="39">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Data element too long" xml:lang="en">Notification that the length of the data element received exceeded the maximum length specified in the data element description.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="40">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Data element too short" xml:lang="en">Notification that the length of the data element received is shorter than the minimum length specified in the data element description.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="41">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Permanent communication network error" xml:lang="en">Notification that a permanent error was reported by the communication network used for transfer of the interchange. Re-transmission of an identical interchange with the same parameters at network level will not succeed.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="42">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Temporary communication network error" xml:lang="en">Notification that a temporary error was reported by the communication network used for transfer of the interchange. Re-transmissions of an identical interchange may succeed.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="43">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Unknown interchange recipient" xml:lang="en">Notification that the interchange recipient is not known by a network provider.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0001">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Syntax identifier" xml:lang="en">Coded identification of the agency controlling a syntax and syntax level used in an interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:A">
+      <xsd:length value="4"/>
+      <xsd:enumeration value="UNOA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UN/ECE level A" xml:lang="en">As defined in the basic code table of ISO 646 with the exceptions of lower case letters, alternative graphic character allocations and national or application- oriented graphic character allocations.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNOB">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UN/ECE level B" xml:lang="en">As defined in the basic code table of ISO 646 with the exceptions of alternative graphic character allocations and national or application-oriented graphic character allocations.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNOC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UN/ECE level C" xml:lang="en">As defined in ISO/IEC 8859-1 : Information technology - Part 1: Latin alphabet No. 1.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNOD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UN/ECE level D" xml:lang="en">As defined in ISO/IEC 8859-2 : Information technology - Part 2: Latin alphabet No. 2.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNOE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UN/ECE level E" xml:lang="en">As defined in ISO/IEC 8859-5 : Information technology - Part 5: Latin/Cyrillic alphabet.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNOF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UN/ECE level F" xml:lang="en">As defined in ISO 8859-7 : Information processing - Part 7: Latin/Greek alphabet.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0002">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Syntax version number" xml:lang="en">Version number of the syntax identified in the syntax identifier (0001)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N">
+      <xsd:totalDigits value="1"/>
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Version 1" xml:lang="en">ISO 9735:1988.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Version 2" xml:lang="en">ISO 9735:1990.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="3">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Version 3" xml:lang="en">ISO 9735 Amendment 1:1992.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0004">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Sender identification" xml:lang="en">Name or coded representation of the sender of a data interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="35"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0007">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Partner identification code qualifier" xml:lang="en">Qualifier referring to the source of codes for the identifiers of interchanging partners.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="4"/>
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="DUNS (Data Universal Numbering System)" xml:lang="en">Partner identification code assigned by Dun &amp; Bradstreet.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="4">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="IATA (International Air Transport Association)" xml:lang="en">Partner identification code assigned by the International Air Transport Association.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="5">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="INSEE (Institut National de la Statistique et des Etudes Economiques) - SIRET" xml:lang="en">French national statistics institute. SIRET means Systeme Informatique du Repertoire des entreprises et de leurs ETablissements.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="8">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UCC Communications ID (Uniform Code Council Communications Identifier)" xml:lang="en">The Uniform Code Council Communications Identifier is a ten digit code used to uniquely identify physical and logical locations.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="9">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="DUNS (Data Universal Numbering System) with 4 digit suffix" xml:lang="en">Partner identification code assigned by Dun &amp; Bradstreet with the 4 digit suffix.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="12">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Telephone number" xml:lang="en">Partner identification code corresponds to the partner telephone number.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="14">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="GS1" xml:lang="en">Partner identification code assigned by GS1, an international organization of GS1 Member Organizations that manages the GS1 System.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="18">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="AIAG (Automotive Industry Action Group)" xml:lang="en">Partner identification code assigned by the Automotive Industry Action Group.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="22">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="INSEE (Institut National de la Statistique et des Etudes Economiques) - SIREN" xml:lang="en">French national statistics institute. SIREN means Systeme Informatique du Repertoire des ENtreprises (et de leurs etablissements).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="30">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="ISO 6523: Organization identification" xml:lang="en">Partner identification code specified in ISO 6523 (Structures for the identification of organizations).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="31">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="DIN (Deutsches Institut fuer Normung)" xml:lang="en">German standardization institute.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="33">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="BfA (Bundesversicherungsanstalt fuer Angestellte)" xml:lang="en">German social security association.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="34">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="National Statistical Agency" xml:lang="en">Partner identification code assigned by a national statistical agency.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="51">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="GEIS (General Electric Information Services)" xml:lang="en">Partner identification code assigned by General Electric Information Services.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="52">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="INS (IBM Network Services)" xml:lang="en">Partner identification code assigned by IBM Network Services.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="53">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Datenzentrale des Einzelhandels" xml:lang="en">German data centre for retail trade.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="54">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Bundesverband der Deutschen Baustoffhaendler" xml:lang="en">German building material trade association.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="55">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Bank identifier code" xml:lang="en">Partner identification code corresponds to the partner bank identification code.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="57">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="KTNet (Korea Trade Network Services)" xml:lang="en">Partner identification code assigned by Korea Trade Network Services.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="58">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="UPU (Universal Postal Union)" xml:lang="en">Partner identification code assigned by the Universal Postal Union.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="59">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="ODETTE (Organization for Data Exchange through Tele- Transmission in Europe)" xml:lang="en">European automotive industry project.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="61">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="SCAC (Standard Carrier Alpha Code)" xml:lang="en">Directory of standard multimodal carriers and tariff agent codes. The SCAC lists and codes transportation companies.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="63">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="ECA (Electronic Commerce Australia)" xml:lang="en">Australian association for electronic commerce.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="65">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="TELEBOX 400 (Deutsche Telekom)" xml:lang="en">German telecommunications service.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="80">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="NHS (National Health Service)" xml:lang="en">United Kingdom National Health Service.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="82">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Statens Teleforvaltning" xml:lang="en">Norwegian telecommunications regulatory authority (NTRA).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="84">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Athens Chamber of Commerce" xml:lang="en">Greek Chamber of Commerce.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="85">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Swiss Chamber of Commerce" xml:lang="en">Swiss Chamber of Commerce.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="86">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="US Council for International Business" xml:lang="en">United States Council for International Business.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="87">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="National Federation of Chambers of Commerce and Industry" xml:lang="en">Belgium National Federation of Chambers of Commerce and Industry.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="89">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Association of British Chambers of Commerce" xml:lang="en">Association of British Chambers of Commerce.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="90">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="SITA (Societe Internationale de Telecommunications Aeronautiques)" xml:lang="en">SITA (Societe Internationale de Telecommunications Aeronautiques).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="91">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Assigned by seller or seller's agent" xml:lang="en">Partner identification code assigned by the seller or seller's agent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="92">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Assigned by buyer or buyer's agent" xml:lang="en">Partner identification code assigned by the buyer or buyer's agent.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="103">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="TW, Trade-van" xml:lang="en">Trade-van is an EDI VAN service center for customs, transport, and insurance in national and international trade.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="128">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="CH, BCNR (Swiss Clearing Bank Number)" xml:lang="en">Code for the identification of a Swiss clearing bank as a sender and/or receiver of an electronic message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="129">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="CH, BPI (Swiss Business Partner Identification)" xml:lang="en">Code for the identification of a corporate or a Swiss non-clearing bank as a sender and/or receiver of an electronic message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="144">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="US, DoDAAC (Department of Defense Activity Address Code)" xml:lang="en">Code assigned to uniquely identify all military units in the United States Department of Defense.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="145">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="FR, DGCP (Direction Generale de la Comptabilite Publique)" xml:lang="en">Code assigned by the French public accounting office.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="146">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="FR, DGI (Direction Generale des Impots)" xml:lang="en">Code assigned by the French taxation authority.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="147">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="JP, JIPDEC/ECPC (Japan Information Processing Development Corporation / Electronic Commerce Promotion Center)" xml:lang="en">Partner identification code which is registered with JIPDEC/ECPC.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="148">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="ITU (International Telecommunications Union) Data Network Identification Code (DNIC)" xml:lang="en">Data network identification code assigned by the ITU.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="500">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="DE, BDEW (Bundesverband der Energie- und Wasserwirtschaft e.V.)" xml:lang="en">The Federal Association of Energy and Water (BDEW) is the trade association of the German industries for natural gas, electricity supply, long-distance heating and water supply.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="501">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="EASEE-gas (European Association for the Streamlining of Energy Exchange)" xml:lang="en">Partner identification code which is registered with EASEE-gas.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="502">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="DE, DVGW (Deutsche Vereinigung des Gas- und Wasserfaches e.V.)" xml:lang="en">The DVGW is the German Technical and Scientific Association for Gas and Water.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="Z01">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Vehicle registration number" xml:lang="en">Registration number of a vehicle assigned by a recognised authority.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ZZZ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Mutually defined" xml:lang="en">Mutually defined between trading partners.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0031">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Acknowledgement request" xml:lang="en">Code determined by the sender for acknowledgement of the interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N">
+      <xsd:totalDigits value="1"/>
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Requested" xml:lang="en">Acknowledgement is requested.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0008">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Address for reverse routing" xml:lang="en">Address specified by the sender of an interchange to be included by the recipient in the response interchanges to facilitate internal routing.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="14"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0032">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Communications agreement ID" xml:lang="en">Identification by name or code of the type of agreement under which the interchange takes place.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="35"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0104">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Erroneous component data element position" xml:lang="en">The numerical count position of the component data element in error. Each component data element position defined in the composite data element description shall cause the count to be incremented. The count starts at 1.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N..">
+      <xsd:totalDigits value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0035">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Test indicator" xml:lang="en">Indication that the interchange is a test.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N">
+      <xsd:totalDigits value="1"/>
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Interchange is a test" xml:lang="en">Indicates that the interchange is a test.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="5">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Interchange is a service provider test" xml:lang="en">Indicates that this interchange is a test with a service provider.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0036">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Interchange control count" xml:lang="en">The count either of the number of messages or, if used, of the number of functional groups in an interchange. One of these counts shall appear.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N..">
+      <xsd:totalDigits value="6"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0060">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Number of messages" xml:lang="en">A count of the number of messages in a functional group.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N..">
+      <xsd:totalDigits value="6"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0038">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Functional group identification" xml:lang="en">Identification of the one type of message in a functional group.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="6"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0062">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Message reference number" xml:lang="en">Unique message reference assigned by the sender.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="14"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0065">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Message type" xml:lang="en">Code identifying a type of message and assigned by its controlling agency.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="6"/>
+      <xsd:enumeration value="APERAK">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Application error and acknowledgement message" xml:lang="en">A code to identify the application error and acknowledgement message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AUTHOR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Authorization message" xml:lang="en">A code to identify the authorization message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BALANC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Balance message" xml:lang="en">A code to identify the balance message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BANSTA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Banking status message" xml:lang="en">A code to identify the banking status message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BAPLIE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Bayplan/stowage plan occupied and empty locations message" xml:lang="en">A code to identify the bayplan/stowage plan occupied and empty locations message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BERMAN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Berth management message" xml:lang="en">A code to identify the berth management message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BMISRM">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Bulk marine inspection summary report message" xml:lang="en">A code to identify the bulk marine inspection summary report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BOPBNK">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Bank transactions and portfolio transactions report message" xml:lang="en">A code to identify the bank transactions and portfolio transactions report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BOPCUS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Balance of payment customer transaction report message" xml:lang="en">A code to identify the balance of payment customer transaction report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BOPDIR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Direct balance of payment declaration message" xml:lang="en">A code to identify the direct balance of payment declaration message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BOPINF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Balance of payment information from customer message" xml:lang="en">A code to identify the balance of payment information from customer message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BUSCRD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Business credit report message" xml:lang="en">A code to identify the business credit report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CALINF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Vessel call information message" xml:lang="en">A code to identify the vessel call information message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CASINT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Request for legal administration action in civil proceedings message" xml:lang="en">A code to identify the request for legal administration action in civil proceedings message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CASRES">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Legal administration response in civil proceedings message" xml:lang="en">A code to identify the legal administration response in civil proceedings message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CHACCO">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Chart of accounts message" xml:lang="en">A code to identify the chart of accounts message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CLASET">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Classification information set message" xml:lang="en">A code to identify the classification information set message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CNTCND">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Contractual conditions message" xml:lang="en">A code to identify the contractual conditions message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COACSU">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Commercial account summary message" xml:lang="en">A code to identify the commercial account summary message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COARRI">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container discharge/loading report message" xml:lang="en">A code to identify the container discharge/loading report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CODECO">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container gate-in/gate-out report message" xml:lang="en">A code to identify the container gate-in/gate-out report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CODENO">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Permit expiration/clearance ready notice message" xml:lang="en">A code to identify the permit expiration/clearance ready notice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COEDOR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container stock report message" xml:lang="en">A code to identify the container stock report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COHAOR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container special handling order message" xml:lang="en">A code to identify the container special handling order message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COLREQ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Request for a documentary collection message" xml:lang="en">A code to identify the request for a documentary collection message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COMDIS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Commercial dispute message" xml:lang="en">A code to identify the commercial dispute message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONAPW">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Advice on pending works message" xml:lang="en">A code to identify the advice on pending works message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONDPV">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Direct payment valuation message" xml:lang="en">A code to identify the direct payment valuation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONDRA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Drawing administration message" xml:lang="en">A code to identify the drawing administration message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONDRO">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Drawing organisation message" xml:lang="en">A code to identify the drawing organisation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONEST">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Establishment of contract message" xml:lang="en">A code to identify the establishment of contract message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONITT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Invitation to tender message" xml:lang="en">A code to identify the invitation to tender message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONPVA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Payment valuation message" xml:lang="en">A code to identify the payment valuation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONQVA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Quantity valuation message" xml:lang="en">A code to identify the quantity valuation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONRPW">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Response of pending works message" xml:lang="en">A code to identify the response of pending works message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONTEN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Tender message" xml:lang="en">A code to identify the tender message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONTRL">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Syntax and service report message" xml:lang="en">A code to identify the syntax and service report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CONWQD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Work item quantity determination message" xml:lang="en">A code to identify the work item quantity determination message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COPARN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container announcement message" xml:lang="en">A code to identify the container announcement message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COPAYM">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Contributions for payment" xml:lang="en">A code to identify the contributions for payment.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COPINO">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container pre-notification message" xml:lang="en">A code to identify the container pre-notification message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COPRAR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container discharge/loading order message" xml:lang="en">A code to identify the container discharge/loading order message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COREOR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container release order message" xml:lang="en">A code to identify the container release order message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COSTCO">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container stuffing/stripping confirmation message" xml:lang="en">A code to identify the container stuffing/stripping confirmation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="COSTOR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Container stuffing/stripping order message" xml:lang="en">A code to identify the container stuffing/stripping order message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CREADV">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Credit advice message" xml:lang="en">A code to identify the credit advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CREEXT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Extended credit advice message" xml:lang="en">A code to identify the extended credit advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CREMUL">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Multiple credit advice message" xml:lang="en">A code to identify the multiple credit advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CUSCAR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Customs cargo report message" xml:lang="en">A code to identify the customs cargo report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CUSDEC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Customs declaration message" xml:lang="en">A code to identify the customs declaration message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CUSEXP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Customs express consignment declaration message" xml:lang="en">A code to identify the customs express consignment declaration message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CUSPED">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Periodic customs declaration message" xml:lang="en">A code to identify the periodic customs declaration message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CUSREP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Customs conveyance report message" xml:lang="en">A code to identify the customs conveyance report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CUSRES">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Customs response message" xml:lang="en">A code to identify the customs response message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DEBADV">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Debit advice message" xml:lang="en">A code to identify the debit advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DEBMUL">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Multiple debit advice message" xml:lang="en">A code to identify the multiple debit advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DEBREC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Debts recovery message" xml:lang="en">A code to identify the debts recovery message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DELFOR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Delivery schedule message" xml:lang="en">A code to identify the delivery schedule message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DELJIT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Delivery just in time message" xml:lang="en">A code to identify the delivery just in time message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DESADV">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Despatch advice message" xml:lang="en">A code to identify the despatch advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DESTIM">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Equipment damage and repair estimate message" xml:lang="en">A code to identify the equipment damage and repair estimate message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DGRECA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Dangerous goods recapitulation message" xml:lang="en">A code to identify the dangerous goods recapitulation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DIRDEB">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Direct debit message" xml:lang="en">A code to identify the direct debit message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DIRDEF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Directory definition message" xml:lang="en">A code to identify the directory definition message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DMRDEF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Data maintenance request definition message" xml:lang="en">A code to identify the data maintenance request definition message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DMSTAT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Data maintenance status report/query message" xml:lang="en">A code to identify the data maintenance status report/query message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DOCADV">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Documentary credit advice message" xml:lang="en">A code to identify the documentary credit advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DOCAMA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Advice of an amendment of a documentary credit message" xml:lang="en">A code to identify the advice of an amendment of a documentary credit message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DOCAMI">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Documentary credit amendment information message" xml:lang="en">A code to identify the documentary credit amendment information message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DOCAMR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Request for an amendment of a documentary credit message" xml:lang="en">A code to identify the request for an amendment of a documentary credit message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DOCAPP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Documentary credit application message" xml:lang="en">A code to identify the documentary credit application message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DOCARE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Response to an amendment of a documentary credit message" xml:lang="en">A code to identify the response to an amendment of a documentary credit message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DOCINF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Documentary credit issuance information message" xml:lang="en">A code to identify the documentary credit issuance information message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ENTREC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Accounting entries message" xml:lang="en">A code to identify the accounting entries message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FINCAN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Financial cancellation message" xml:lang="en">A code to identify the financial cancellation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FINPAY">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Multiple interbank funds transfer message" xml:lang="en">A code to identify the multiple interbank funds transfer message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FINSTA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Financial statement of an account message" xml:lang="en">A code to identify the financial statement of an account message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GENRAL">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="General purpose message" xml:lang="en">A code to identify the general purpose message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GESMES">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Generic statistical message" xml:lang="en">A code to identify the generic statistical message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GOVCBR">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Government cross border regulatory message" xml:lang="en">A code to identify the government cross border regulatory message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HANMOV">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Cargo/goods handling and movement message" xml:lang="en">A code to identify the cargo/goods handling and movement message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ICASRP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Insurance claim assessment and reporting message" xml:lang="en">A code to identify the insurance claim assessment and reporting message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ICSOLI">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Insurance claim solicitors instruction message" xml:lang="en">A code to identify the insurance claim solicitor&#146;s instruction message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFCSUM">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Forwarding and consolidation summary message" xml:lang="en">A code to identify the forwarding and consolidation summary message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTCCA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Forwarding and transport shipment charge calculation message" xml:lang="en">A code to identify the forwarding and transport shipment charge calculation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTDGN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Dangerous goods notification message" xml:lang="en">A code to identify the dangerous goods notification message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTFCC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="International transport freight costs and other charges message" xml:lang="en">A code to identify the international transport freight costs and other charges message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTICL">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Cargo insurance claims message" xml:lang="en">A code to identify the cargo insurance claims message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTMAN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Arrival notice message" xml:lang="en">A code to identify the arrival notice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTMBC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Booking confirmation message" xml:lang="en">A code to identify the booking confirmation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTMBF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Firm booking message" xml:lang="en">A code to identify the firm booking message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTMBP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Provisional booking message" xml:lang="en">A code to identify the provisional booking message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTMCA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Consignment advice message" xml:lang="en">A code to identify the consignment advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTMCS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Instruction contract status message" xml:lang="en">A code to identify the instruction contract status message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTMIN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Instruction message" xml:lang="en">A code to identify the instruction message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTRIN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Forwarding and transport rate information message" xml:lang="en">A code to identify the forwarding and transport rate information message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTSAI">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Forwarding and transport schedule and availability information message" xml:lang="en">A code to identify the forwarding and transport schedule and availability information message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTSTA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="International multimodal status report message" xml:lang="en">A code to identify the international multimodal status report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IFTSTQ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="International multimodal status request message" xml:lang="en">A code to identify the international multimodal status request message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IMPDEF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="EDI implementation guide definition message" xml:lang="en">A code to identify the EDI implementation guide definition message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="INFCON">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Infrastructure condition message" xml:lang="en">A code to identify the infrastructure condition message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="INFENT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Enterprise accounting information message" xml:lang="en">A code to identify the enterprise accounting information message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="INSDES">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Instruction to despatch message" xml:lang="en">A code to identify the instruction to despatch message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="INSPRE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Insurance premium message" xml:lang="en">A code to identify the insurance premium message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="INSREQ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Inspection request message" xml:lang="en">A code to identify the inspection request message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="INSRPT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Inspection report message" xml:lang="en">A code to identify the inspection report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="INVOIC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Invoice message" xml:lang="en">A code to identify the invoice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="INVRPT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Inventory report message" xml:lang="en">A code to identify the inventory report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IPPOAD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Insurance policy administration message" xml:lang="en">A code to identify the insurance policy administration message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IPPOMO">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Motor insurance policy message" xml:lang="en">A code to identify the motor insurance policy message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ISENDS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Intermediary system enablement or disablement message" xml:lang="en">A code to identify the intermediary system enablement or disablement message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ITRRPT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="In transit report detail message" xml:lang="en">A code to identify the in transit report detail message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="JAPRES">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Job application result message" xml:lang="en">A code to identify the job application result message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="JINFDE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Job information demand message" xml:lang="en">A code to identify the job information demand message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="JOBAPP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Job application proposal message" xml:lang="en">A code to identify the job application proposal message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="JOBCON">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Job order confirmation message" xml:lang="en">A code to identify the job order confirmation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="JOBMOD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Job order modification message" xml:lang="en">A code to identify the job order modification message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="JOBOFF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Job order message" xml:lang="en">A code to identify the job order message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="JUPREQ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Justified payment request message" xml:lang="en">A code to identify the justified payment request message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="LEDGER">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Ledger message" xml:lang="en">A code to identify the ledger message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="LREACT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Life reinsurance activity message" xml:lang="en">A code to identify the life reinsurance activity message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="LRECLM">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Life reinsurance claims message" xml:lang="en">A code to identify the life reinsurance claims message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MEDPID">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Person identification message" xml:lang="en">A code to identify the person identification message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MEDPRE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Medical prescription message" xml:lang="en">A code to identify the medical prescription message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MEDREQ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Medical service request message" xml:lang="en">A code to identify the medical service request message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MEDRPT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Medical service report message" xml:lang="en">A code to identify the medical service report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MEDRUC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Medical resource usage and cost message" xml:lang="en">A code to identify the medical resource usage and cost message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MEQPOS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Means of transport and equipment position message" xml:lang="en">A code to identify the means of transport and equipment position message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MOVINS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Stowage instruction message" xml:lang="en">A code to identify the stowage instruction message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MSCONS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Metered services consumption report message" xml:lang="en">A code to identify the metered services consumption report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ORDCHG">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Purchase order change request message" xml:lang="en">A code to identify the purchase order change request message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ORDERS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Purchase order message" xml:lang="en">A code to identify the purchase order message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ORDRSP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Purchase order response message" xml:lang="en">A code to identify the purchase order response message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OSTENQ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Order status enquiry message" xml:lang="en">A code to identify the order status enquiry message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OSTRPT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Order status report message" xml:lang="en">A code to identify the order status report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PARTIN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Party information message" xml:lang="en">A code to identify the party information message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PAXLST">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Passenger list message" xml:lang="en">A code to identify the passenger list message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PAYDUC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Payroll deductions advice message" xml:lang="en">A code to identify the payroll deductions advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PAYEXT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Extended payment order message" xml:lang="en">A code to identify the extended payment order message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PAYMUL">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Multiple payment order message" xml:lang="en">A code to identify the multiple payment order message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PAYORD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Payment order message" xml:lang="en">A code to identify the payment order message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PRICAT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Price/sales catalogue message" xml:lang="en">A code to identify the price/sales catalogue message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PRIHIS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Pricing history message" xml:lang="en">A code to identify the pricing history message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PROCST">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Project cost reporting message" xml:lang="en">A code to identify the project cost reporting message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PRODAT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Product data message" xml:lang="en">A code to identify the product data message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PRODEX">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Product exchange reconciliation message" xml:lang="en">A code to identify the product exchange reconciliation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PROINQ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Product inquiry message" xml:lang="en">A code to identify the product inquiry message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PROSRV">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Product service message" xml:lang="en">A code to identify the product service message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PROTAP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Project tasks planning message" xml:lang="en">A code to identify the project tasks planning message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PRPAID">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Insurance premium payment message" xml:lang="en">A code to identify the insurance premium payment message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="QALITY">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Quality data message" xml:lang="en">A code to identify the quality data message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="QUOTES">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Quote message" xml:lang="en">A code to identify the quote message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RDRMES">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Raw data reporting message" xml:lang="en">A code to identify the raw data reporting message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="REBORD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reinsurance bordereau message" xml:lang="en">A code to identify the reinsurance bordereau message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RECADV">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Receiving advice message" xml:lang="en">A code to identify the receiving advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RECALC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reinsurance calculation message" xml:lang="en">A code to identify the reinsurance calculation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RECECO">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Credit risk cover message" xml:lang="en">A code to identify the credit risk cover message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RECLAM">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reinsurance claims message" xml:lang="en">A code to identify the reinsurance claims message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RECORD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reinsurance core data message" xml:lang="en">A code to identify the reinsurance core data message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="REGENT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Registration of enterprise message" xml:lang="en">A code to identify the registration of enterprise message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RELIST">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reinsured objects list message" xml:lang="en">A code to identify the reinsured objects list message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="REMADV">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Remittance advice message" xml:lang="en">A code to identify the remittance advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="REPREM">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reinsurance premium message" xml:lang="en">A code to identify the reinsurance premium message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="REQDOC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Request for document message" xml:lang="en">A code to identify the request for document message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="REQOTE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Request for quote message" xml:lang="en">A code to identify the request for quote message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RESETT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reinsurance settlement message" xml:lang="en">A code to identify the reinsurance settlement message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RESMSG">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reservation message" xml:lang="en">A code to identify the reservation message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RETACC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Reinsurance technical account message" xml:lang="en">A code to identify the reinsurance technical account message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RETANN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Announcement for returns message" xml:lang="en">A code to identify the announcement for returns message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RETINS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Instruction for returns message" xml:lang="en">A code to identify the instruction for returns message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCALL">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Repair call message" xml:lang="en">A code to identify the repair call message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SAFHAZ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Safety and hazard data message" xml:lang="en">A code to identify the safety and hazard data message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SANCRT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="International movement of goods governmental regulatory message" xml:lang="en">A code to identify the international movement of goods governmental regulatory message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SLSFCT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Sales forecast message" xml:lang="en">A code to identify the sales forecast message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SLSRPT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Sales data report message" xml:lang="en">A code to identify the sales data report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SOCADE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Social administration message" xml:lang="en">A code to identify the social administration message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SSIMOD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Modification of identity details message" xml:lang="en">A code to identify the modification of identity details message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SSRECH">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Worker's insurance history message" xml:lang="en">A code to identify the worker's insurance history message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SSREGW">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Notification of registration of a worker message" xml:lang="en">A code to identify the notification of registration of a worker message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="STATAC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Statement of account message" xml:lang="en">A code to identify the statement of account message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="STLRPT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Settlement transaction reporting message" xml:lang="en">A code to identify the settlement transaction reporting message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SUPCOT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Superannuation contributions advice message" xml:lang="en">A code to identify the superannuation contributions advice message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SUPMAN">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Superannuation maintenance message" xml:lang="en">A code to identify the superannuation maintenance message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SUPRES">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Supplier response message" xml:lang="en">A code to identify the supplier response message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TANSTA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Tank status report message" xml:lang="en">A code to identify the tank status report message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TAXCON">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Tax control message" xml:lang="en">A code to identify the tax control message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TPFREP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Terminal performance message" xml:lang="en">A code to identify the terminal performance message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UTILMD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Utilities master data message" xml:lang="en">A code to identify the utilities master data message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UTILTS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Utilities time series message" xml:lang="en">A code to identify the utilities time series message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="VATDEC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Value added tax message" xml:lang="en">A code to identify the value added tax message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="VESDEP">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Vessel departure message" xml:lang="en">A code to identify the vessel departure message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WASDIS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Waste disposal information message" xml:lang="en">A code to identify the waste disposal information message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WKGRDC">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Work grant decision message" xml:lang="en">A code to identify the work grant decision message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WKGRRE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Work grant request message" xml:lang="en">A code to identify the work grant request message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0068">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Common access reference" xml:lang="en">Reference serving as a key to relate all subsequent transfers of data to the same business case or file.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="35"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0096">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Segment position in message" xml:lang="en">The numerical count position of a specific segment that is within the actual received message. The numbering starts with, and includes, the UNH segment as segment number 1. To identify a segment that contains an error, this is the numerical count position of that segment. To report that a segment is missing, this is the numerical count position of the last segment that was processed before the position where the missing segment was expected to be. A missing segment group is denoted by identifying the first segment in the group as missing.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N..">
+      <xsd:totalDigits value="6"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0098">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Erroneous data element position in segment" xml:lang="en">The numerical count position of the simple or composite data element in error. The segment code and each following simple or composite data element defined in the segment description shall cause the count to be incremented. The segment tag has position number 1.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N..">
+      <xsd:totalDigits value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0010">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Recipient identification" xml:lang="en">Name or coded representation of the recipient of a data interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="35"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0013">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Service segment tag, coded" xml:lang="en">Code identifying a segment.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:A">
+      <xsd:length value="3"/>
+      <xsd:enumeration value="UCD">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Data element error indication" xml:lang="en">To identify an erroneous simple, composite or component data element, and to identify the nature of the error.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UCF">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Functional group response" xml:lang="en">To identify a functional group in the subject interchange and to indicate acknowledgement or rejection (action taken) of the UNG and UNE segments, and to identify any error related to these segments. Depending on the action code, it may also indicate the action taken on the messages within that functional group.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UCI">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Interchange response" xml:lang="en">To identify the subject interchange, to indicate interchange receipt, to indicate acknowledgement or rejection (action taken) of the UNA, UNB and UNZ segments, and to identify any error related to these segments. Depending on the action code, it may also indicate the action taken on the functional groups and messages within that interchange.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UCM">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Message response" xml:lang="en">To identify a message in the subject interchange, and to indicate that message's acknowledgement or rejection (action taken), and to identify any error related to the UNH and UNT segments.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UCS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Segment error indication" xml:lang="en">To identify either a segment containing an error or a missing segment, and to identify any error related to the complete segment.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNA">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Service string advice" xml:lang="en">To define the characters selected for use as delimiters and indicators in the rest of the interchange that follows.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNB">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Interchange header" xml:lang="en">To start, identify and specify an interchange.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNE">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Functional group trailer" xml:lang="en">To end and check the completeness of a functional group.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNG">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Functional group header" xml:lang="en">To head, identify and specify a functional group.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNH">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Message header" xml:lang="en">To head, identify and specify a message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNS">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Section control" xml:lang="en">To separate header, detail and summary sections of a message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNT">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Message trailer" xml:lang="en">To end and check the completeness of a message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNZ">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Interchange trailer" xml:lang="en">To end and check the completeness of an interchange.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0014">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Routing address" xml:lang="en">Address specified by the recipient of an interchange to be included by the sender and used by the recipient for routing of received interchanges inside his organization.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="14"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0040">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Sender identification" xml:lang="en">Code or name identifying the division, department etc. within the originating sender's organization.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="35"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0017">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Date of preparation" xml:lang="en">Local date when an interchange or a functional group was prepared.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N">
+      <xsd:totalDigits value="6"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0019">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Time of preparation" xml:lang="en">Local time of day when an interchange or a functional group was prepared.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N">
+      <xsd:totalDigits value="4"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0044">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Recipient's identification" xml:lang="en">Code or name identifying the division, department etc. within the recipient's organization for which the group of messages is intended.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="35"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0070">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Sequence of transfers" xml:lang="en">Number assigned by the sender indicating the numerical sequence of one or more transfers.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N..">
+      <xsd:totalDigits value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0048">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Functional group reference number" xml:lang="en">Unique reference number assigned by the sender's division, department etc.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="14"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0073">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="First and last transfer" xml:lang="en">Indication used for the first and last message in a sequence of the same type of message relating to the same topic.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:A">
+      <xsd:length value="1"/>
+      <xsd:enumeration value="C">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Creation" xml:lang="en">First transmission of a number of transfers of the same message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="F">
+        <xsd:annotation>
+          <xsd:documentation bic:creationDate="06.09.23" bic:owner="a.muthu" bic:title="Final" xml:lang="en">Last transmission of a number of transfers of the same message.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0074">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Number of segments in the message" xml:lang="en">Control count of number of segments in a message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:N..">
+      <xsd:totalDigits value="6"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0077">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Text reference code" xml:lang="en">Qualifies and identifies the purpose and function of the segment if indicated in the message specification.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN">
+      <xsd:length value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0078">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Free form text" xml:lang="en">Not machine-processable information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="70"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="_0020">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="Interchange control reference" xml:lang="en">Unique reference assigned by the sender to an interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="edifact:AN..">
+      <xsd:length value="14"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="S001">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SYNTAX IDENTIFIER" xml:lang="en">Identification of the agency controlling the syntax and indication of syntax level, plus the syntax version number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0001" type="Q1:_0001"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0002" type="Q1:_0002"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S002">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INTERCHANGE SENDER" xml:lang="en">Identification of the sender of the interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0004" type="Q1:_0004"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0007" type="Q1:_0007"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0008" type="Q1:_0008"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S003">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INTERCHANGE RECIPIENT" xml:lang="en">Identification of the recipient of the interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0010" type="Q1:_0010"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0007" type="Q1:_0007"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0014" type="Q1:_0014"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S004">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DATE/TIME OF PREPARATION" xml:lang="en">Date/time of preparation of the interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0017" type="Q1:_0017"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0019" type="Q1:_0019"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S005">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RECIPIENT'S REFERENCE, PASSWORD" xml:lang="en">Reference or password as agreed between the communicating partners.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0022" type="Q1:_0022"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0025" type="Q1:_0025"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S006">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="APPLICATION SENDER'S IDENTIFICATION" xml:lang="en">Identification of the sender's division, department etc. from which a group of message is sent.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0040" type="Q1:_0040"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0007" type="Q1:_0007"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S007">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="APPLICATION RECIPIENT'S IDENTIFICATION" xml:lang="en">Identification of the recipient's division, department etc. for which a group of messages is intended.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0044" type="Q1:_0044"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0007" type="Q1:_0007"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S008">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MESSAGE VERSION" xml:lang="en">Specification of the type of messages in the functional group.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0052" type="Q1:_0052"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0054" type="Q1:_0054"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0057" type="Q1:_0057"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S010">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="STATUS OF THE TRANSFER" xml:lang="en">Statement that the message is one in a sequence of transfers relating to the same topic.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0070" type="Q1:_0070"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0073" type="Q1:_0073"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S009">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MESSAGE IDENTIFIER" xml:lang="en">Identification of the type, version etc. of the message being interchanged.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0065" type="Q1:_0065"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0052" type="Q1:_0052"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0054" type="Q1:_0054"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0051" type="Q1:_0051"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0057" type="Q1:_0057"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="S011">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DATA ELEMENT IDENTIFICATION" xml:lang="en">Identification of the position for an erroneous data element. This can be the position of a simple or composite data element in the definition of a segment or a component data element in the definition a composite data element.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_0098" type="Q1:_0098"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_0104" type="Q1:_0104"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UNH">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MESSAGE HEADER" xml:lang="en">To head, identify and specify a message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0062" type="Q1:_0062"/>
+          <xsd:element minOccurs="1" name="S009" type="Q1:S009"/>
+          <xsd:element minOccurs="0" name="_0068" type="Q1:_0068"/>
+          <xsd:element minOccurs="0" name="S010" type="Q1:S010"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UCD">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DATA ELEMENT ERROR INDICATION" xml:lang="en">To identify an erroneous simple, composite or component data element, and to identify the nature of the error.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0085" type="Q1:_0085"/>
+          <xsd:element minOccurs="1" name="S011" type="Q1:S011"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UCF">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="FUNCTIONAL GROUP RESPONSE" xml:lang="en">To identify a functional group in the subject interchange and to indicate acknowledgement or rejection (action taken) of the UNG and UNE segments, and to identify any error related to these segments. Depending on the action code, it may also indicate the action taken on the messages within that functional group.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0048" type="Q1:_0048"/>
+          <xsd:element minOccurs="1" name="S006" type="Q1:S006"/>
+          <xsd:element minOccurs="1" name="S007" type="Q1:S007"/>
+          <xsd:element minOccurs="1" name="_0083" type="Q1:_0083"/>
+          <xsd:element minOccurs="0" name="_0085" type="Q1:_0085"/>
+          <xsd:element minOccurs="0" name="_0013" type="Q1:_0013"/>
+          <xsd:element minOccurs="0" name="S011" type="Q1:S011"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UCI">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INTERCHANGE RESPONSE" xml:lang="en">To identify the subject interchange, to indicate interchange receipt, to indicate acknowledgement or rejection (action taken) of the UNA, UNB and UNZ segments, and to identify any error related to these segments. Depending on the action code, it may also indicate the action taken on the functional groups and messages within that interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0020" type="Q1:_0020"/>
+          <xsd:element minOccurs="1" name="S002" type="Q1:S002"/>
+          <xsd:element minOccurs="1" name="S003" type="Q1:S003"/>
+          <xsd:element minOccurs="1" name="_0083" type="Q1:_0083"/>
+          <xsd:element minOccurs="0" name="_0085" type="Q1:_0085"/>
+          <xsd:element minOccurs="0" name="_0013" type="Q1:_0013"/>
+          <xsd:element minOccurs="0" name="S011" type="Q1:S011"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UNS">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SECTION CONTROL" xml:lang="en">To separate header, detail and summary sections of a message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0081" type="Q1:_0081"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UNT">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MESSAGE TRAILER" xml:lang="en">To end and check the completeness of a message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0074" type="Q1:_0074"/>
+          <xsd:element minOccurs="1" name="_0062" type="Q1:_0062"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UCM">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MESSAGE RESPONSE" xml:lang="en">To identify a message in the subject interchange, and to indicate that message's acknowledgement or rejection (action taken), and to identify any error related to the UNH and UNT segments.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0062" type="Q1:_0062"/>
+          <xsd:element minOccurs="1" name="S009" type="Q1:S009"/>
+          <xsd:element minOccurs="1" name="_0083" type="Q1:_0083"/>
+          <xsd:element minOccurs="0" name="_0085" type="Q1:_0085"/>
+          <xsd:element minOccurs="0" name="_0013" type="Q1:_0013"/>
+          <xsd:element minOccurs="0" name="S011" type="Q1:S011"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UNZ">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INTERCHANGE TRAILER" xml:lang="en">To end and check the completeness of an interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0036" type="Q1:_0036"/>
+          <xsd:element minOccurs="1" name="_0020" type="Q1:_0020"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UNB">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INTERCHANGE HEADER" xml:lang="en">To start, identify and specify an interchange.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="S001" type="Q1:S001"/>
+          <xsd:element minOccurs="1" name="S002" type="Q1:S002"/>
+          <xsd:element minOccurs="1" name="S003" type="Q1:S003"/>
+          <xsd:element minOccurs="1" name="S004" type="Q1:S004"/>
+          <xsd:element minOccurs="1" name="_0020" type="Q1:_0020"/>
+          <xsd:element minOccurs="0" name="S005" type="Q1:S005"/>
+          <xsd:element minOccurs="0" name="_0026" type="Q1:_0026"/>
+          <xsd:element minOccurs="0" name="_0029" type="Q1:_0029"/>
+          <xsd:element minOccurs="0" name="_0031" type="Q1:_0031"/>
+          <xsd:element minOccurs="0" name="_0032" type="Q1:_0032"/>
+          <xsd:element minOccurs="0" name="_0035" type="Q1:_0035"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UCS">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SEGMENT ERROR INDICATION" xml:lang="en">To identify either a segment containing an error or a missing segment, and to identify any error related to the complete segment.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0096" type="Q1:_0096"/>
+          <xsd:element minOccurs="0" name="_0085" type="Q1:_0085"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UNE">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="FUNCTIONAL GROUP TRAILER" xml:lang="en">To end and check the completeness of a functional group.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0060" type="Q1:_0060"/>
+          <xsd:element minOccurs="1" name="_0048" type="Q1:_0048"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UNG">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="FUNCTIONAL GROUP HEADER" xml:lang="en">To head, identify and specify a functional group.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="_0038" type="Q1:_0038"/>
+          <xsd:element minOccurs="1" name="S006" type="Q1:S006"/>
+          <xsd:element minOccurs="1" name="S007" type="Q1:S007"/>
+          <xsd:element minOccurs="1" name="S004" type="Q1:S004"/>
+          <xsd:element minOccurs="1" name="_0048" type="Q1:_0048"/>
+          <xsd:element minOccurs="1" name="_0051" type="Q1:_0051"/>
+          <xsd:element minOccurs="1" name="S008" type="Q1:S008"/>
+          <xsd:element minOccurs="0" name="_0058" type="Q1:_0058"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="UNA">
+    <xsd:complexContent>
+      <xsd:extension base="edifact:Segment">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="DELIMITER">
+            <xsd:simpleType>
+              <xsd:restriction base="edifact:AN">
+                <xsd:length value="6"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:bic="http://www.seeburger.com/bicng/lang/schema/" xmlns:composite="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/compositedataelements" xmlns:data="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/dataelements" xmlns:edifact="http://www.seeburger.com/bicng/lang/schema/edifact" xmlns:segments="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/segments" xmlns:service="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/service" xmlns:xsd="http://www.w3.org/2001/XMLSchema" bic:messageType="EDIFACT" bic:version="1.0" targetNamespace="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/BAPLIE">
+  <xsd:import namespace="http://www.seeburger.com/bicng/lang/schema/edifact" schemaLocation="platform:/plugin/com.seeburger.bicng.lang.schema.facade.edifact/resources/edifact.xsd"/>
+  <xsd:import namespace="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/dataelements" schemaLocation="dataElements.xsd"/>
+  <xsd:import namespace="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/compositedataelements" schemaLocation="compositeDataElements.xsd"/>
+  <xsd:import namespace="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/segments" schemaLocation="segments.xsd"/>
+  <xsd:import namespace="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/service" schemaLocation="service.xsd"/>
+  <xsd:element name="BAPLIE">
+    <xsd:complexType>
+      <xsd:complexContent>
+        <xsd:extension base="edifact:SegmentGroup">
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="UNA" type="service:UNA"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="UNB" type="service:UNB"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="UNG" type="service:UNG"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" name="Message">
+              <xsd:complexType>
+                <xsd:complexContent>
+                  <xsd:extension base="edifact:SegmentGroup">
+                    <xsd:sequence>
+                      <xsd:element minOccurs="1" name="UNH" type="service:UNH"/>
+                      <xsd:element minOccurs="1" name="BGM" type="segments:BGM"/>
+                      <xsd:element minOccurs="1" name="DTM" type="segments:DTM"/>
+                      <xsd:element maxOccurs="9" minOccurs="0" name="SG1">
+                        <xsd:complexType>
+                          <xsd:complexContent>
+                            <xsd:extension base="edifact:SegmentGroup">
+                              <xsd:sequence>
+                                <xsd:element minOccurs="1" name="RFF" type="segments:RFF"/>
+                                <xsd:element maxOccurs="9" minOccurs="0" name="DTM" type="segments:DTM"/>
+                              </xsd:sequence>
+                            </xsd:extension>
+                          </xsd:complexContent>
+                        </xsd:complexType>
+                      </xsd:element>
+                      <xsd:element maxOccurs="9" minOccurs="0" name="SG2">
+                        <xsd:complexType>
+                          <xsd:complexContent>
+                            <xsd:extension base="edifact:SegmentGroup">
+                              <xsd:sequence>
+                                <xsd:element minOccurs="1" name="NAD" type="segments:NAD"/>
+                                <xsd:element maxOccurs="9" minOccurs="0" name="SG3">
+                                  <xsd:complexType>
+                                    <xsd:complexContent>
+                                      <xsd:extension base="edifact:SegmentGroup">
+                                        <xsd:sequence>
+                                          <xsd:element minOccurs="1" name="CTA" type="segments:CTA"/>
+                                          <xsd:element maxOccurs="9" minOccurs="0" name="COM" type="segments:COM"/>
+                                        </xsd:sequence>
+                                      </xsd:extension>
+                                    </xsd:complexContent>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                            </xsd:extension>
+                          </xsd:complexContent>
+                        </xsd:complexType>
+                      </xsd:element>
+                      <xsd:element maxOccurs="3" minOccurs="1" name="SG4">
+                        <xsd:complexType>
+                          <xsd:complexContent>
+                            <xsd:extension base="edifact:SegmentGroup">
+                              <xsd:sequence>
+                                <xsd:element minOccurs="1" name="TDT" type="segments:TDT"/>
+                                <xsd:element maxOccurs="2" minOccurs="1" name="LOC" type="segments:LOC"/>
+                                <xsd:element maxOccurs="99" minOccurs="1" name="DTM" type="segments:DTM"/>
+                                <xsd:element minOccurs="0" name="RFF" type="segments:RFF"/>
+                                <xsd:element minOccurs="0" name="FTX" type="segments:FTX"/>
+                              </xsd:sequence>
+                            </xsd:extension>
+                          </xsd:complexContent>
+                        </xsd:complexType>
+                      </xsd:element>
+                      <xsd:element maxOccurs="9999" minOccurs="0" name="SG5">
+                        <xsd:complexType>
+                          <xsd:complexContent>
+                            <xsd:extension base="edifact:SegmentGroup">
+                              <xsd:sequence>
+                                <xsd:element minOccurs="1" name="LOC" type="segments:LOC"/>
+                                <xsd:element minOccurs="0" name="GID" type="segments:GID"/>
+                                <xsd:element minOccurs="0" name="GDS" type="segments:GDS"/>
+                                <xsd:element maxOccurs="9" minOccurs="0" name="FTX" type="segments:FTX"/>
+                                <xsd:element maxOccurs="9" minOccurs="1" name="MEA" type="segments:MEA"/>
+                                <xsd:element maxOccurs="9" minOccurs="0" name="DIM" type="segments:DIM"/>
+                                <xsd:element minOccurs="0" name="TMP" type="segments:TMP"/>
+                                <xsd:element minOccurs="0" name="RNG" type="segments:RNG"/>
+                                <xsd:element maxOccurs="9" minOccurs="0" name="LOC" type="segments:LOC"/>
+                                <xsd:element minOccurs="1" name="RFF" type="segments:RFF"/>
+                                <xsd:element maxOccurs="3" minOccurs="0" name="SG6">
+                                  <xsd:complexType>
+                                    <xsd:complexContent>
+                                      <xsd:extension base="edifact:SegmentGroup">
+                                        <xsd:sequence>
+                                          <xsd:element minOccurs="1" name="EQD" type="segments:EQD"/>
+                                          <xsd:element maxOccurs="9" minOccurs="0" name="EQA" type="segments:EQA"/>
+                                          <xsd:element maxOccurs="9" minOccurs="0" name="NAD" type="segments:NAD"/>
+                                          <xsd:element maxOccurs="9" minOccurs="0" name="RFF" type="segments:RFF"/>
+                                        </xsd:sequence>
+                                      </xsd:extension>
+                                    </xsd:complexContent>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="999" minOccurs="0" name="SG7">
+                                  <xsd:complexType>
+                                    <xsd:complexContent>
+                                      <xsd:extension base="edifact:SegmentGroup">
+                                        <xsd:sequence>
+                                          <xsd:element minOccurs="1" name="DGS" type="segments:DGS"/>
+                                          <xsd:element minOccurs="0" name="FTX" type="segments:FTX"/>
+                                        </xsd:sequence>
+                                      </xsd:extension>
+                                    </xsd:complexContent>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                            </xsd:extension>
+                          </xsd:complexContent>
+                        </xsd:complexType>
+                      </xsd:element>
+                      <xsd:element minOccurs="1" name="UNT" type="service:UNT"/>
+                    </xsd:sequence>
+                  </xsd:extension>
+                </xsd:complexContent>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="UNE" type="service:UNE"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="UNZ" type="service:UNZ"/>
+          </xsd:sequence>
+        </xsd:extension>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

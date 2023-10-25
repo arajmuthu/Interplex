@@ -1,0 +1,23 @@
+(:
+DB_2_SAP_ACK1.seemap
+created at Oct 24, 2023 by a.muthu
+:)
+
+import schema default element namespace "" at "DBS_ACK1.seexsd" as source;
+import schema default element namespace "" at "DBS_INTERPLEX_ACK1.seexsd" as target;
+
+DBS_INTERPLEX_ACK1 <- /DBS_ACK1
+{
+	msgId := header/msgId
+	orgId := header/orgId
+	timeStamp := header/timeStamp
+	ctry := header/ctry
+	txnResponses
+	{
+		responseType := txnResponses/txnResponses_item/responseType
+		msgRefId := txnResponses/txnResponses_item/msgRefId
+		txnStatus := txnResponses/txnResponses_item/txnStatus
+		txnRejectCode := txnResponses/txnResponses_item/txnRejectCode
+		txnStatusDes := txnResponses/txnResponses_item/txnStatusDescription
+	}
+}

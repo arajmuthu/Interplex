@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://www.seeburger.com/Interplex/MM2Arcstone2" xmlns:bic="http://www.seeburger.com/bicng/lang/schema/" xmlns:json="http://www.seeburger.com/bicng/lang/schema/json" xmlns:xsd="http://www.w3.org/2001/XMLSchema" bic:messageType="JSON" elementFormDefault="qualified" targetNamespace="http://www.seeburger.com/Interplex/MM2Arcstone2">
+  <xsd:import namespace="http://www.seeburger.com/bicng/lang/schema/json" schemaLocation="platform:/plugin/com.seeburger.bicng.lang.schema.facade.json/resources/json.xsd"/>
+  <xsd:element name="root">
+    <xsd:complexType>
+      <xsd:complexContent>
+        <xsd:extension base="json:ObjectMessageRoot">
+          <xsd:all>
+            <xsd:element maxOccurs="1" minOccurs="1" name="MaterialNumber">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="MaterialDescription">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="MaterialUOM">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="MaterialType">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="TotalShelfLife">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ShelfLifeUOM">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Status">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Plant">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="PlantDescription">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="LongText">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AssemblyScrapPercentage">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Backflush">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="BatchManaged">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="MRPController">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="OldMaterialNumber">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="UltCustomerNumber">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ProjectName">
+              <xsd:simpleType>
+                <xsd:restriction base="json:String"/>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:all>
+        </xsd:extension>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

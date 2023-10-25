@@ -1,0 +1,17 @@
+{
+	"header": {
+		"msgId": "2021072740502",
+		"orgId": "CNSZNHA5",
+		"timeStamp": "2023-10-06T17:30:59.836",
+		"ctry": "GB"
+	},
+	"txnResponses": [
+		{
+			"responseType": "ACK1",
+			"msgRefId": "IRS2310060000150",
+			"txnStatus": "RJCT",
+			"txnRejectCode": "I001",
+			"txnStatusDescription": "Mandatory information is missing - senderParty_bankCtryCode"
+		}
+	]
+}

@@ -1,0 +1,2772 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:bic="http://www.seeburger.com/bicng/lang/schema/" xmlns:data="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/dataelements" xmlns:edifact="http://www.seeburger.com/bicng/lang/schema/edifact" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/compositedataelements">
+  <xsd:import namespace="http://www.seeburger.com/bicng/lang/schema/edifact" schemaLocation="platform:/plugin/com.seeburger.bicng.lang.schema.facade.edifact/resources/edifact.xsd"/>
+  <xsd:import namespace="http://www.seeburger.com/bic/schema/lang/edifact/edifactDirectory/dataelements" schemaLocation="dataElements.xsd"/>
+  <xsd:complexType name="C840">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ATTENDANCE ADMISSION DETAILS" xml:lang="en">To specify type of admission.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9445" type="data:_9445"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9444" type="data:_9444"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C841">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ATTENDANCE DISCHARGE DETAILS" xml:lang="en">To specify type of discharge.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9447" type="data:_9447"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9446" type="data:_9446"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C844">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ORGANISATION CLASSIFICATION DETAIL" xml:lang="en">To specify details regarding the class of an organisation.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3083" type="data:_3083"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3082" type="data:_3082"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C174">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="VALUE/RANGE" xml:lang="en">Measurement value and relevant minimum and maximum values of the measurement range.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6411" type="data:_6411"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6314" type="data:_6314"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6162" type="data:_6162"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6152" type="data:_6152"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6432" type="data:_6432"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C848">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MEASUREMENT UNIT DETAILS" xml:lang="en">To specify a measurement unit.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6417" type="data:_6417"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6416" type="data:_6416"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C849">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PARTIES TO INSTRUCTION" xml:lang="en">Identify the sending and receiving parties of the instruction.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3301" type="data:_3301"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3285" type="data:_3285"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C941">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RELATIONSHIP" xml:lang="en">Identification and/or description of a relationship.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9143" type="data:_9143"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9142" type="data:_9142"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C270">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CONTROL" xml:lang="en">Control total for checking integrity of a message or part of a message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6069" type="data:_6069"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6066" type="data:_6066"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6411" type="data:_6411"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C942">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MEMBERSHIP CATEGORY" xml:lang="en">Identification and/or description of a membership category for a member of a scheme or group.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7451" type="data:_7451"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7450" type="data:_7450"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C272">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ITEM CHARACTERISTIC" xml:lang="en">To provide the characteristic of the item being described.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7081" type="data:_7081"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C944">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MEMBERSHIP STATUS" xml:lang="en">Code and/or description of membership status.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7453" type="data:_7453"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7452" type="data:_7452"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C273">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ITEM DESCRIPTION" xml:lang="en">Description of an item.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7009" type="data:_7009"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7008" type="data:_7008"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7008" type="data:_7008"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3453" type="data:_3453"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C945">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MEMBERSHIP LEVEL" xml:lang="en">Identification of a membership level.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7455" type="data:_7455"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7457" type="data:_7457"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7456" type="data:_7456"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C080">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PARTY NAME" xml:lang="en">Identification of a transaction party by name, one to five lines. Party name may be formatted.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3036" type="data:_3036"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3036" type="data:_3036"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3036" type="data:_3036"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3036" type="data:_3036"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3036" type="data:_3036"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3045" type="data:_3045"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C948">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="EMPLOYMENT CATEGORY" xml:lang="en">Code and/or description of an employment category.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9005" type="data:_9005"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9004" type="data:_9004"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C082">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PARTY IDENTIFICATION DETAILS" xml:lang="en">Identification of a transaction party by code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3039" type="data:_3039"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C279">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="QUANTITY DIFFERENCE INFORMATION" xml:lang="en">Information on quantity difference.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6064" type="data:_6064"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6063" type="data:_6063"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C085">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MARITAL STATUS DETAILS" xml:lang="en">To specify the marital status of a person.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3479" type="data:_3479"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3478" type="data:_3478"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C564">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PHYSICAL OR LOGICAL STATE INFORMATION" xml:lang="en">To give information in coded or clear text form on the physical or logical state.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7007" type="data:_7007"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7006" type="data:_7006"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C088">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INSTITUTION IDENTIFICATION" xml:lang="en">Identification of a financial institution by code branch number, or name and name of place. Code or branch number preferred.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3433" type="data:_3433"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3434" type="data:_3434"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3432" type="data:_3432"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3436" type="data:_3436"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C850">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="STATUS OF INSTRUCTION" xml:lang="en">Provides information regarding the status of an instruction.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4405" type="data:_4405"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3036" type="data:_3036"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C851">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RISK OBJECT TYPE" xml:lang="en">Specification of a type of risk object.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7179" type="data:_7179"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C852">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RISK OBJECT SUB-TYPE" xml:lang="en">To provide identification details for a risk object sub-type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7177" type="data:_7177"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7176" type="data:_7176"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C853">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ERROR SEGMENT POINT DETAILS" xml:lang="en">To indicate the exact segment location of an application error within a message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9166" type="data:_9166"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1050" type="data:_1050"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1159" type="data:_1159"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C186">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="QUANTITY DETAILS" xml:lang="en">Quantity information in a transaction, qualified when relevant.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6063" type="data:_6063"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6060" type="data:_6060"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6411" type="data:_6411"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C950">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="QUALIFICATION CLASSIFICATION" xml:lang="en">Qualification classification description and/or code. This specifies the trade, skill, professional or similar qualification category.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9007" type="data:_9007"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9006" type="data:_9006"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9006" type="data:_9006"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C951">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="OCCUPATION" xml:lang="en">Description of an occupation.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9009" type="data:_9009"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9008" type="data:_9008"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9008" type="data:_9008"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C280">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RANGE" xml:lang="en">Range minimum and maximum limits.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6411" type="data:_6411"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6162" type="data:_6162"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6152" type="data:_6152"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C953">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CONTRIBUTION TYPE" xml:lang="en">Identification of the type of a contribution to a scheme or group.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5049" type="data:_5049"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5048" type="data:_5048"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C955">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ATTRIBUTE TYPE" xml:lang="en">Identification of the type of attribute.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_9021" type="data:_9021"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C956">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ATTRIBUTE DETAILS" xml:lang="en">Identification of the attribute related to an entity.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9019" type="data:_9019"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9018" type="data:_9018"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C090">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ADDRESS DETAILS" xml:lang="en">To specify the details of an address.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3477" type="data:_3477"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3286" type="data:_3286"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3286" type="data:_3286"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3286" type="data:_3286"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3286" type="data:_3286"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3286" type="data:_3286"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C286">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SEQUENCE INFORMATION" xml:lang="en">Identification of a sequence and source for sequencing.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_1050" type="data:_1050"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1159" type="data:_1159"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C288">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PRODUCT GROUP" xml:lang="en">To give product group information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5389" type="data:_5389"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5388" type="data:_5388"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C099">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="FILE DETAILS" xml:lang="en">To define details relevant to a file.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_1516" type="data:_1516"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1056" type="data:_1056"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1503" type="data:_1503"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1502" type="data:_1502"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C960">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="REASON FOR CHANGE" xml:lang="en">Code and/or description of the reason for a change.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4295" type="data:_4295"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4294" type="data:_4294"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C961">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="FORMULA COMPLEXITY" xml:lang="en">Identification of the complexity of a formula.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9505" type="data:_9505"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C292">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PRICE CHANGE INFORMATION" xml:lang="en">A value assigned by the seller to indicate movement of prices from a previous price catalogue.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5377" type="data:_5377"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C770">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ARRAY CELL DETAILS" xml:lang="en">To contain the data for a contiguous set of cells in an array.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9424" type="data:_9424"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C778">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="POSITION IDENTIFICATION" xml:lang="en">To identify the position of an object in a structure containing the object.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7164" type="data:_7164"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1050" type="data:_1050"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C779">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ARRAY STRUCTURE IDENTIFICATION" xml:lang="en">The identification of an array structure.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_9428" type="data:_9428"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7405" type="data:_7405"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C002">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DOCUMENT/MESSAGE NAME" xml:lang="en">Identification of a type of document/message by code or name. Code preferred.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1001" type="data:_1001"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1000" type="data:_1000"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C585">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PRIORITY DETAILS" xml:lang="en">To indicate a priority.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4037" type="data:_4037"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4036" type="data:_4036"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C100">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TERMS OF DELIVERY OR TRANSPORT" xml:lang="en">Terms of delivery or transport code from a specified source.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4053" type="data:_4053"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4052" type="data:_4052"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4052" type="data:_4052"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C878">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CHARGE/ALLOWANCE ACCOUNT" xml:lang="en">Identification of the account for charge or allowance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3434" type="data:_3434"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3194" type="data:_3194"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6345" type="data:_6345"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C101">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RELIGION DETAILS" xml:lang="en">To specify the religion of a person.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3483" type="data:_3483"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3482" type="data:_3482"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C106">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DOCUMENT/MESSAGE IDENTIFICATION" xml:lang="en">Identification of a document/message by its number and eventually its version or revision.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1004" type="data:_1004"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1056" type="data:_1056"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1060" type="data:_1060"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C107">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TEXT REFERENCE" xml:lang="en">Coded reference to a standard text and its source.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4441" type="data:_4441"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C108">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TEXT LITERAL" xml:lang="en">Free text; one to five lines.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4440" type="data:_4440"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4440" type="data:_4440"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4440" type="data:_4440"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4440" type="data:_4440"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4440" type="data:_4440"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C780">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="VALUE LIST IDENTIFICATION" xml:lang="en">The identification of a coded or non coded value list.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_1518" type="data:_1518"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7405" type="data:_7405"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C782">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DATA SET IDENTIFICATION" xml:lang="en">The identification of a data set.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_1520" type="data:_1520"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7405" type="data:_7405"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C783">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="FOOTNOTE SET IDENTIFICATION" xml:lang="en">The identification of a set of footnotes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_9430" type="data:_9430"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7405" type="data:_7405"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C200">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CHARGE" xml:lang="en">Identification of a charge by code and/or by name.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8023" type="data:_8023"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8022" type="data:_8022"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4237" type="data:_4237"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7140" type="data:_7140"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C784">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="FOOTNOTE IDENTIFICATION" xml:lang="en">The identification of a footnote.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_9432" type="data:_9432"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7405" type="data:_7405"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C785">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="STATISTICAL CONCEPT IDENTIFICATION" xml:lang="en">The identification of a statistical concept.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6434" type="data:_6434"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7405" type="data:_7405"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C202">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PACKAGE TYPE" xml:lang="en">Type of package by name or by code from a specified source.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7065" type="data:_7065"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7064" type="data:_7064"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C786">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="STRUCTURE COMPONENT IDENTIFICATION" xml:lang="en">The identification of a structure component.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7512" type="data:_7512"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7405" type="data:_7405"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C203">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RATE/TARIFF CLASS" xml:lang="en">Identification of the applicable rate/tariff class.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5243" type="data:_5243"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5242" type="data:_5242"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5275" type="data:_5275"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5275" type="data:_5275"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C593">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ACCOUNT IDENTIFICATION" xml:lang="en">Identification of an account.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_1147" type="data:_1147"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1148" type="data:_1148"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1146" type="data:_1146"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1146" type="data:_1146"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6345" type="data:_6345"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C205">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="HAZARD CODE" xml:lang="en">The identification of the dangerous goods in code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_8351" type="data:_8351"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8078" type="data:_8078"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8092" type="data:_8092"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C206">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="IDENTIFICATION NUMBER" xml:lang="en">The identification of an object.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7402" type="data:_7402"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7405" type="data:_7405"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4405" type="data:_4405"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C595">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ACCOUNTING JOURNAL IDENTIFICATION" xml:lang="en">Identification of an accounting journal.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_1171" type="data:_1171"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1170" type="data:_1170"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C596">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ACCOUNTING ENTRY TYPE DETAILS" xml:lang="en">Identification of the type of entry included in an accounting journal.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4475" type="data:_4475"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4474" type="data:_4474"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C208">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="IDENTITY NUMBER RANGE" xml:lang="en">Goods item identification numbers, start and end of consecutively numbered range.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7402" type="data:_7402"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7402" type="data:_7402"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C110">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PAYMENT TERMS" xml:lang="en">Terms of payment code from a specified source.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4277" type="data:_4277"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4276" type="data:_4276"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4276" type="data:_4276"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C889">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CHARACTERISTIC VALUE" xml:lang="en">To provide the value of a characteristic.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7111" type="data:_7111"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7110" type="data:_7110"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7110" type="data:_7110"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C112">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TERMS/TIME INFORMATION" xml:lang="en">Time details in payment terms.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_2475" type="data:_2475"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_2009" type="data:_2009"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_2151" type="data:_2151"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_2152" type="data:_2152"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C401">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="EXCESS TRANSPORTATION INFORMATION" xml:lang="en">To provide details of reason for, and responsibility for, use of transportation other than normally utilized.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_8457" type="data:_8457"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_8459" type="data:_8459"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7130" type="data:_7130"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C402">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PACKAGE TYPE IDENTIFICATION" xml:lang="en">Identification of the form in which goods are described.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7077" type="data:_7077"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7064" type="data:_7064"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7143" type="data:_7143"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7064" type="data:_7064"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7143" type="data:_7143"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C210">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MARKS &amp; LABELS" xml:lang="en">Shipping marks on packages in free text; one to ten lines.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7102" type="data:_7102"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7102" type="data:_7102"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7102" type="data:_7102"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7102" type="data:_7102"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7102" type="data:_7102"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7102" type="data:_7102"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7102" type="data:_7102"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7102" type="data:_7102"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7102" type="data:_7102"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7102" type="data:_7102"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C211">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DIMENSIONS" xml:lang="en">Specification of the dimensions of a transportable unit.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6411" type="data:_6411"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6168" type="data:_6168"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6140" type="data:_6140"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6008" type="data:_6008"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C212">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ITEM NUMBER IDENTIFICATION" xml:lang="en">Goods identification for a specified source.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7140" type="data:_7140"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7143" type="data:_7143"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C213">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="NUMBER AND TYPE OF PACKAGES" xml:lang="en">Number and type of individual parts of a shipment.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7224" type="data:_7224"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7065" type="data:_7065"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7064" type="data:_7064"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7233" type="data:_7233"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C214">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SPECIAL SERVICES IDENTIFICATION" xml:lang="en">Identification of a special service by a code from a specified source or by description.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7161" type="data:_7161"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7160" type="data:_7160"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7160" type="data:_7160"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C215">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SEAL ISSUER" xml:lang="en">Identification of the issuer of a seal on equipment either by code or by name.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9303" type="data:_9303"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9302" type="data:_9302"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C218">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="HAZARDOUS MATERIAL" xml:lang="en">To specify a hazardous material.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7419" type="data:_7419"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7418" type="data:_7418"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C501">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PERCENTAGE DETAILS" xml:lang="en">Percentage relating to a specified basis.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5245" type="data:_5245"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5482" type="data:_5482"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5249" type="data:_5249"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C219">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MOVEMENT TYPE" xml:lang="en">Description of type of service for movement of cargo.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8335" type="data:_8335"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8334" type="data:_8334"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C502">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MEASUREMENT DETAILS" xml:lang="en">Identification of measurement type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6313" type="data:_6313"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6321" type="data:_6321"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6155" type="data:_6155"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6154" type="data:_6154"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C503">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DOCUMENT/MESSAGE DETAILS" xml:lang="en">Identification of document/message by number, status, source and/or language.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1004" type="data:_1004"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1373" type="data:_1373"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1366" type="data:_1366"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3453" type="data:_3453"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1056" type="data:_1056"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1060" type="data:_1060"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C504">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CURRENCY DETAILS" xml:lang="en">The usage to which a currency relates.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6347" type="data:_6347"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6345" type="data:_6345"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6343" type="data:_6343"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6348" type="data:_6348"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C506">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="REFERENCE" xml:lang="en">Identification of a reference.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_1153" type="data:_1153"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1154" type="data:_1154"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1156" type="data:_1156"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4000" type="data:_4000"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1060" type="data:_1060"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C507">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DATE/TIME/PERIOD" xml:lang="en">Date and/or time, or period relevant to the specified date/time/period type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_2005" type="data:_2005"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_2380" type="data:_2380"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_2379" type="data:_2379"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C508">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="LANGUAGE DETAILS" xml:lang="en">To identify a language.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3453" type="data:_3453"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3452" type="data:_3452"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C509">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PRICE INFORMATION" xml:lang="en">Identification of price type, price and related details.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5125" type="data:_5125"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5118" type="data:_5118"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5375" type="data:_5375"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5387" type="data:_5387"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5284" type="data:_5284"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6411" type="data:_6411"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C601">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="STATUS CATEGORY" xml:lang="en">To specify the category of the status.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_9015" type="data:_9015"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C128">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RATE DETAILS" xml:lang="en">Rate per unit and rate basis.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5419" type="data:_5419"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5420" type="data:_5420"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5284" type="data:_5284"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6411" type="data:_6411"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C220">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MODE OF TRANSPORT" xml:lang="en">Method of transport code or name. Code preferred.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8067" type="data:_8067"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8066" type="data:_8066"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C222">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TRANSPORT IDENTIFICATION" xml:lang="en">Code and/or name identifying the means of transport.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8213" type="data:_8213"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8212" type="data:_8212"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8453" type="data:_8453"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C223">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DANGEROUS GOODS SHIPMENT FLASHPOINT" xml:lang="en">Temperature at which a vapor can be ignited as per ISO 1523/73.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7106" type="data:_7106"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6411" type="data:_6411"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C224">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="EQUIPMENT SIZE AND TYPE" xml:lang="en">Code and/or name identifying size and type of equipment used in transport. Code preferred.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8155" type="data:_8155"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8154" type="data:_8154"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C701">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ERROR POINT DETAILS" xml:lang="en">Indication of the point of error in a message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1049" type="data:_1049"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1052" type="data:_1052"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1054" type="data:_1054"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C702">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CODE SET IDENTIFICATION" xml:lang="en">To identify a code set.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9150" type="data:_9150"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C030">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="EVENT TYPE" xml:lang="en">To specify a type of event.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9171" type="data:_9171"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C703">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="NATURE OF CARGO" xml:lang="en">Rough classification of a type of cargo.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7085" type="data:_7085"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C228">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TRANSPORT MEANS" xml:lang="en">Code and/or name identifying the type of means of transport.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8179" type="data:_8179"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8178" type="data:_8178"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C229">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CHARGE CATEGORY" xml:lang="en">Identification of a category or a zone of charges.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5237" type="data:_5237"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C512">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SIZE DETAILS" xml:lang="en">Information about the number of observations.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6173" type="data:_6173"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6174" type="data:_6174"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C514">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SAMPLE LOCATION DETAILS" xml:lang="en">Identification of location within the specimen, from which the sample was taken.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3237" type="data:_3237"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3236" type="data:_3236"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C709">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MESSAGE IDENTIFIER" xml:lang="en">Identification of the message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_1475" type="data:_1475"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1056" type="data:_1056"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1058" type="data:_1058"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1476" type="data:_1476"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1523" type="data:_1523"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1060" type="data:_1060"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1373" type="data:_1373"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C515">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TEST REASON" xml:lang="en">To identify the reason for the test as specified.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4425" type="data:_4425"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4424" type="data:_4424"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C516">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MONETARY AMOUNT" xml:lang="en">Amount of goods or services stated as a monetary amount in a specified currency.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5025" type="data:_5025"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5004" type="data:_5004"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6345" type="data:_6345"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6343" type="data:_6343"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4405" type="data:_4405"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C517">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="LOCATION IDENTIFICATION" xml:lang="en">Identification of a location by code or name.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3225" type="data:_3225"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3224" type="data:_3224"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C519">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RELATED LOCATION ONE IDENTIFICATION" xml:lang="en">Identification the first related location by code or name.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3223" type="data:_3223"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3222" type="data:_3222"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C329">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PATTERN DESCRIPTION" xml:lang="en">Shipment, delivery or production interval pattern and timing.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_2013" type="data:_2013"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_2015" type="data:_2015"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_2017" type="data:_2017"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C138">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PRICE MULTIPLIER INFORMATION" xml:lang="en">Price multiplier and its identification.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5394" type="data:_5394"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5393" type="data:_5393"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C901">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="APPLICATION ERROR DETAIL" xml:lang="en">Code assigned by the recipient of a message to indicate a data validation error condition.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_9321" type="data:_9321"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C231">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="METHOD OF PAYMENT" xml:lang="en">Code identifying the method of payment.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4215" type="data:_4215"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C232">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="GOVERNMENT ACTION" xml:lang="en">Code indicating a type of government action.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9415" type="data:_9415"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9411" type="data:_9411"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9417" type="data:_9417"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9353" type="data:_9353"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C233">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SERVICE" xml:lang="en">To identify a service (which may constitute an additional component to a basic contract).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7273" type="data:_7273"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7273" type="data:_7273"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C234">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="UNDG INFORMATION" xml:lang="en">Information on dangerous goods, taken from the United Nations Dangerous Goods classification.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7124" type="data:_7124"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7088" type="data:_7088"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C040">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CARRIER" xml:lang="en">Identification of a carrier by code and/or by name. Code preferred.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3127" type="data:_3127"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3128" type="data:_3128"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C235">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="HAZARD IDENTIFICATION PLACARD DETAILS" xml:lang="en">These numbers appear on the hazard identification placard required on the means of transport.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8158" type="data:_8158"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8186" type="data:_8186"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C236">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DANGEROUS GOODS LABEL" xml:lang="en">Markings identifying the type of hazardous goods and similar information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8246" type="data:_8246"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8246" type="data:_8246"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8246" type="data:_8246"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C042">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="NATIONALITY DETAILS" xml:lang="en">To specify a nationality.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3293" type="data:_3293"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3292" type="data:_3292"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C237">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="EQUIPMENT IDENTIFICATION" xml:lang="en">Marks (letters and/or numbers) identifying equipment used for transport such as a container.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8260" type="data:_8260"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3207" type="data:_3207"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C239">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TEMPERATURE SETTING" xml:lang="en">The temperature under which the goods are (to be) stored or shipped.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6246" type="data:_6246"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6411" type="data:_6411"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C521">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="BUSINESS FUNCTION" xml:lang="en">To specify a business reason.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4027" type="data:_4027"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4025" type="data:_4025"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4022" type="data:_4022"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C045">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="BILL LEVEL IDENTIFICATION" xml:lang="en">A sequenced collection of facetted codes used for multiple indexing purposes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7436" type="data:_7436"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7438" type="data:_7438"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7440" type="data:_7440"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7442" type="data:_7442"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7444" type="data:_7444"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7446" type="data:_7446"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C522">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INSTRUCTION" xml:lang="en">To specify an instruction.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4403" type="data:_4403"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4401" type="data:_4401"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4400" type="data:_4400"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C523">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="NUMBER OF UNIT DETAILS" xml:lang="en">Identification of number of units and its purpose.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6350" type="data:_6350"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6353" type="data:_6353"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C524">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="HANDLING INSTRUCTIONS" xml:lang="en">Instruction for the handling of goods, products or articles in shipment, storage etc.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4079" type="data:_4079"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4078" type="data:_4078"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C330">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INSURANCE COVER TYPE" xml:lang="en">To provide the insurance cover type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4497" type="data:_4497"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C525">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PURPOSE OF CONVEYANCE CALL" xml:lang="en">Description of the purpose of the call of the conveyance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8025" type="data:_8025"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8024" type="data:_8024"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C049">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="REMUNERATION TYPE IDENTIFICATION" xml:lang="en">Identification of the type of a remuneration.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5315" type="data:_5315"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5314" type="data:_5314"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5314" type="data:_5314"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C331">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INSURANCE COVER DETAILS" xml:lang="en">To provide the insurance cover details.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4495" type="data:_4495"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4494" type="data:_4494"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4494" type="data:_4494"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C526">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="FREQUENCY DETAILS" xml:lang="en">Number of samples collected per specified unit of measure.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_6071" type="data:_6071"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6072" type="data:_6072"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6411" type="data:_6411"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C332">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SALES CHANNEL IDENTIFICATION" xml:lang="en">Identification of sales channel for marketing data, sales, forecast, planning...</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3496" type="data:_3496"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C527">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="STATISTICAL DETAILS" xml:lang="en">Specifications related to statistical measurements.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6314" type="data:_6314"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6411" type="data:_6411"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6313" type="data:_6313"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6321" type="data:_6321"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C333">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INFORMATION REQUEST" xml:lang="en">To specify the information requested in a responding message.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4511" type="data:_4511"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4510" type="data:_4510"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C528">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="COMMODITY/RATE DETAIL" xml:lang="en">Identification of commodity/rates.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7357" type="data:_7357"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C529">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PROCESSING INDICATOR" xml:lang="en">Type of process indication.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7365" type="data:_7365"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7187" type="data:_7187"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C811">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="QUESTION DETAILS" xml:lang="en">To specify a question.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4057" type="data:_4057"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4056" type="data:_4056"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C812">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RESPONSE DETAILS" xml:lang="en">To specify a response to a question, in code or text.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4345" type="data:_4345"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4344" type="data:_4344"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C814">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SAFETY SECTION" xml:lang="en">To identify the safety section to which information relates.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4046" type="data:_4046"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4044" type="data:_4044"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C815">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ADDITIONAL SAFETY INFORMATION" xml:lang="en">To identify additional safety information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4039" type="data:_4039"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4038" type="data:_4038"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C816">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="NAME COMPONENT DETAILS" xml:lang="en">To specify a name component.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3405" type="data:_3405"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3398" type="data:_3398"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3401" type="data:_3401"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3295" type="data:_3295"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C817">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ADDRESS USAGE" xml:lang="en">To describe the usage of an address.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3299" type="data:_3299"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3131" type="data:_3131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3475" type="data:_3475"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C818">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PERSON INHERITED CHARACTERISTIC DETAILS" xml:lang="en">To specify an inherited characteristic of a person.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3311" type="data:_3311"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3310" type="data:_3310"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C819">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="COUNTRY SUB-ENTITY DETAILS" xml:lang="en">To specify a part of a country (eg county or part of a city).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3229" type="data:_3229"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3228" type="data:_3228"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C240">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PRODUCT CHARACTERISTIC" xml:lang="en">Specific product characteristic data.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7037" type="data:_7037"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7036" type="data:_7036"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7036" type="data:_7036"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C241">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DUTY/TAX/FEE TYPE" xml:lang="en">Code and/or name identifying duty, tax or fee.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5153" type="data:_5153"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5152" type="data:_5152"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C242">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PROCESS TYPE AND DESCRIPTION" xml:lang="en">Identification of process type and description.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7187" type="data:_7187"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7186" type="data:_7186"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7186" type="data:_7186"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C243">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DUTY/TAX/FEE DETAIL" xml:lang="en">Rate of duty/tax/fee applicable to commodities or of tax applicable to services.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5279" type="data:_5279"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5278" type="data:_5278"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5273" type="data:_5273"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C244">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TEST METHOD" xml:lang="en">Specification of the test method employed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4415" type="data:_4415"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4416" type="data:_4416"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C246">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CUSTOMS IDENTITY CODES" xml:lang="en">Specification of goods in terms of customs identity.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7361" type="data:_7361"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C531">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PACKAGING DETAILS" xml:lang="en">Packaging level and details, terms and conditions.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7075" type="data:_7075"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7233" type="data:_7233"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7073" type="data:_7073"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C532">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RETURNABLE PACKAGE DETAILS" xml:lang="en">Indication of responsibility for payment and load contents of returnable packages.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8395" type="data:_8395"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_8393" type="data:_8393"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C056">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DEPARTMENT OR EMPLOYEE DETAILS" xml:lang="en">Code and/or name of a department or employee. Code preferred.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3413" type="data:_3413"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3412" type="data:_3412"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C533">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DUTY/TAX/FEE ACCOUNT DETAIL" xml:lang="en">Indication of account reference for duties, taxes and/or fees.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5289" type="data:_5289"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C534">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PAYMENT INSTRUCTION DETAILS" xml:lang="en">Indication of method of payment employed or to be employed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4439" type="data:_4439"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4431" type="data:_4431"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4461" type="data:_4461"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4435" type="data:_4435"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C058">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="NAME AND ADDRESS" xml:lang="en">Unstructured name and address: one to five lines.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3124" type="data:_3124"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3124" type="data:_3124"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3124" type="data:_3124"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3124" type="data:_3124"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3124" type="data:_3124"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C059">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="STREET" xml:lang="en">Street address and/or PO Box number in a structured address: one to four lines.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3042" type="data:_3042"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3042" type="data:_3042"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3042" type="data:_3042"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3042" type="data:_3042"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C536">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CONTRACT AND CARRIAGE CONDITION" xml:lang="en">To identify a contract and carriage condition.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4065" type="data:_4065"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C537">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TRANSPORT PRIORITY" xml:lang="en">To indicate the priority of requested transport service.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4219" type="data:_4219"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C820">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PREMIUM CALCULATION COMPONENT" xml:lang="en">To identify the component affecting premium calculation.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4521" type="data:_4521"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C821">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TYPE OF DAMAGE" xml:lang="en">To specify the type of damage to an object.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7501" type="data:_7501"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7500" type="data:_7500"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C822">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DAMAGE AREA" xml:lang="en">To specify where the damage is on an object.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7503" type="data:_7503"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7502" type="data:_7502"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C823">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TYPE OF UNIT/COMPONENT" xml:lang="en">To identify the type of unit/component of an object (e.g. lock, door, tyre).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7505" type="data:_7505"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7504" type="data:_7504"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C824">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="COMPONENT MATERIAL" xml:lang="en">To identify the material of which a component is composed (e.g. steel, plastics).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7507" type="data:_7507"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7506" type="data:_7506"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C825">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DAMAGE SEVERITY" xml:lang="en">To specify the severity of damage to an object.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7509" type="data:_7509"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7508" type="data:_7508"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C826">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ACTION" xml:lang="en">To indicate an action which has been taken or is to be taken (e.g. in relation to a certain object).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1229" type="data:_1229"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1228" type="data:_1228"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C827">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="TYPE OF MARKING" xml:lang="en">Specification of the type of marking that reflects the method that was used and the conventions adhered to for marking (e.g. of packages).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7511" type="data:_7511"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C828">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CLINICAL INTERVENTION DETAILS" xml:lang="en">To specify a clinical intervention.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9437" type="data:_9437"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9436" type="data:_9436"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C829">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="SUB-LINE INFORMATION" xml:lang="en">To provide an indication that a segment or segment group is used to contain sub-line or sub-line item information and to optionally enable the sub-line to be identified.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5495" type="data:_5495"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1082" type="data:_1082"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C063">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="EVENT IDENTIFICATION" xml:lang="en">To identify an event.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9173" type="data:_9173"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9172" type="data:_9172"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C543">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="AGREEMENT TYPE IDENTIFICATION" xml:lang="en">Identification of specific agreement type by code or name.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7431" type="data:_7431"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7433" type="data:_7433"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7434" type="data:_7434"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C545">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INDEX IDENTIFICATION" xml:lang="en">To identify an index.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5013" type="data:_5013"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5027" type="data:_5027"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C546">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="INDEX VALUE" xml:lang="en">To identify the value of an index.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5030" type="data:_5030"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5039" type="data:_5039"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C830">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="PROCESS IDENTIFICATION DETAILS" xml:lang="en">To identify the details of a specific process.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7191" type="data:_7191"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7190" type="data:_7190"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C549">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="MONETARY FUNCTION" xml:lang="en">To identify the function of a related monetary amount.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_5007" type="data:_5007"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C831">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RESULT DETAILS" xml:lang="en">To specify a value.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6314" type="data:_6314"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6321" type="data:_6321"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6155" type="data:_6155"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6154" type="data:_6154"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C836">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CLINICAL INFORMATION DETAILS" xml:lang="en">To specify an item of clinical information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6413" type="data:_6413"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6412" type="data:_6412"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C837">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="CERTAINTY DETAILS" xml:lang="en">To specify the certainty.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4049" type="data:_4049"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4048" type="data:_4048"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C838">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="DOSAGE DETAILS" xml:lang="en">To specify a dosage.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6083" type="data:_6083"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6082" type="data:_6082"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C839">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ATTENDEE CATEGORY" xml:lang="en">To specify the category of the attendee.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7459" type="data:_7459"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7458" type="data:_7458"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C550">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="REQUIREMENT/CONDITION IDENTIFICATION" xml:lang="en">To identify the specific rule/condition requirement.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_7295" type="data:_7295"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7294" type="data:_7294"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C551">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="BANK OPERATION" xml:lang="en">Identification of a bank operation by code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4383" type="data:_4383"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C552">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ALLOWANCE/CHARGE INFORMATION" xml:lang="en">Identification of allowance/charge information by number and/or code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1230" type="data:_1230"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5189" type="data:_5189"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C553">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RELATED LOCATION TWO IDENTIFICATION" xml:lang="en">Identification of second related location by code or name.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3233" type="data:_3233"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3232" type="data:_3232"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C076">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="COMMUNICATION CONTACT" xml:lang="en">Communication number of a department or employee in a specified channel.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3148" type="data:_3148"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_3155" type="data:_3155"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C554">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="RATE/TARIFF CLASS DETAIL" xml:lang="en">Identification of the applicable rate/tariff class.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_5243" type="data:_5243"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C077">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="FILE IDENTIFICATION" xml:lang="en">To identify a file.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1508" type="data:_1508"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7008" type="data:_7008"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C555">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="STATUS" xml:lang="en">To specify a status.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_4405" type="data:_4405"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_4404" type="data:_4404"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C078">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="ACCOUNT HOLDER IDENTIFICATION" xml:lang="en">Identification of an account holder by account number and/or account holder name in one or two lines. Number preferred.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3194" type="data:_3194"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3192" type="data:_3192"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3192" type="data:_3192"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_6345" type="data:_6345"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C556">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="STATUS REASON" xml:lang="en">To specify the reason for a status.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="_9013" type="data:_9013"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_9012" type="data:_9012"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="C079">
+    <xsd:annotation>
+      <xsd:documentation bic:owner="UN/CEFACT" bic:title="COMPUTER ENVIRONMENT IDENTIFICATION" xml:lang="en">To identify parts of a computer environment.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="edifact:FieldGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1511" type="data:_1511"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1131" type="data:_1131"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_3055" type="data:_3055"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1510" type="data:_1510"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1056" type="data:_1056"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_1058" type="data:_1058"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="_7402" type="data:_7402"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>
